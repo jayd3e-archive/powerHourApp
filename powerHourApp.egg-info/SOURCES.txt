@@ -1,5 +1,6 @@
 README.md
-powerHourApp/status.py
+powerHourApp/__init__.py
+powerHourApp/models.py
 powerHourApp/views.py
 powerHourApp.egg-info/PKG-INFO
 powerHourApp.egg-info/SOURCES.txt

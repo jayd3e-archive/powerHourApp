@@ -11,6 +11,6 @@ from powerHourApp.models import (
 )
 
 
-@view_config(route_name='index', renderer='powerHour:templates/index.mako', permission=NO_PERMISSION_REQUIRED)
+@view_config(route_name='index', renderer='powerHourApp:templates/index.mako', permission=NO_PERMISSION_REQUIRED)
 def index(request):
-    return HTTPFound('/')
+    return {}
