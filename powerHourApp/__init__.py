@@ -25,7 +25,7 @@ def main(global_config, **settings):
     config.set_request_property(get_db, 'db', reify=True)
 
     #Static routes
-    config.add_static_view('style', 'forumapp:dependencies/')
+    config.add_static_view('style', 'powerHourApp:dependencies/')
 
     # Routes
     # HOME

@@ -1,1 +1,77 @@
-CSS CODE
+/* css */
+
+html,body{margin:0;padding:0}
+
+body{font: 76% arial,sans-serif}
+
+p{margin:0 10px 10px}
+
+a{display:block;color: #006;padding:10px}
+
+h1, h2, h3, h4, h5, h6{font-family:Georgia,serif;
+    color:#689AD3;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 100;
+    margin-bottom: 0;}
+
+#header{position:relative;}
+
+#header h1{height:80px;
+    line-height:80px;
+    margin:0;
+    padding-left:10px;
+    background: #4186D3;
+    color: #274F7D;
+    font-family:Georgia,serif;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 100;
+    margin-bottom: 0;
+    font-size: 40px;}
+
+#header a{position:absolute;
+    right:0;
+    top:23px}
+
+#subheader {height:60px;
+    line-height:80px;
+    margin:0;
+    padding-left:10px;
+    background:#04356C;
+    color: #689AD3;}
+
+#content p{line-height:1.4}
+
+#navigation{background:#B9CAFF}
+
+#extra{background:#FF8539}
+
+#footer{background: #333;
+    color: #FFF}
+
+#footer p{margin:0;
+    padding:5px 10px;
+    text-align:center}
+
+#footer a{display:inline;
+    padding:0;
+    color: #C6D5FD}
+
+#wrapper{float:left;
+    width:100%}
+
+#content{margin: 0 200px}
+
+#navigation{float:left;
+    width:200px;
+    margin-left:-100%}
+
+#extra{float:left;
+    width:200px;
+    margin-left:-200px}
+
+#footer{clear:left;
+    width:100%;
+     background:#04356C;
+     color: #689AD3;}
