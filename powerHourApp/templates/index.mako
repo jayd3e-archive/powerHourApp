@@ -6,11 +6,24 @@
     <body>
         <div id="container">
             <div id="header"><h1>Power Hour</h1></div>
-            <div id="subheader"> <p> Search Genre </p> </div>
+
+            <div id="subheader">
+                <form method="get" action="/" id="search">
+                    <label>Search Genre</label>
+                    <input name="q" type="text" size="40" placeholder="Search..." />
+                </form>
+            </div>
 
             <div id="wrapper">
                 <div id="content">
                     <h1> Content Here.</h1>
+                    <br>
+                    <div> <h2> Music Here </h2> </div>
+                    <br>
+                    <div> <h2> Count Down Here </h2> </div>
+                    <br>
+                    <div> <h2> Drink Counter Here </h2> </div>
+
                 </div>
             </div>
 
@@ -24,3 +37,4 @@
         </div>
     </body>
 </html>
+
