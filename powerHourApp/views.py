@@ -13,4 +13,19 @@ from powerHourApp.models import (
 
 @view_config(route_name='index', renderer='powerHourApp:templates/index.mako', permission=NO_PERMISSION_REQUIRED)
 def index(request):
-    return {}
+    db = request.db
+    songs = db.query(Song).all()
+    db.flush()
+    db.commit()
+    if request.POST.get('search', False):
+        search_item = request.POST['search']
+        if db.query(Song).filter(Song.genre.ilike(search_item)).first():
+            result = db.query(Song).filter(Song.genre.ilike(search_item)).first()
+            return{
+                'result': result,
+                'songs': songs
+            }
+        else:
+            message = "No Seach Result!"
+            return dict(message=message, songs=songs)
+    return {'songs': songs}

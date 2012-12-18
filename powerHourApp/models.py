@@ -14,20 +14,14 @@ def initialize_base(engine):
     Base.metadata.create_all(engine)
 
 
-# Many (posts) to one (user)
 class Song(Base):
-    #table containing all posts
     __tablename__ = 'songs'
     #fields
     id = Column(Integer, primary_key=True)
-    title = Column(String, nullable=False)
-    date = Column(DateTime)
-    genre = Column(String, nullable=False)
-    artist = Column(String, nullable=False)
+    uri = Column(String)
+    genre = Column(String)
 
 
-# One (user) to many (post)
-# One (user) to many (comment)
 class User(Base):
     #table containing all users
     __tablename__ = 'users'
